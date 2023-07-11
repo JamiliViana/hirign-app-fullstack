@@ -1,0 +1,29 @@
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Java
+*.class
+*.jar
+*.war
+target/
+
+# Spring Boot
+/target/
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# React
+/node_modules/
+/build/
+
+# Vite
+/.vite/
+/dist/
+
+# Arquivos temporários
+*.log
+*.swp
+*.bak
