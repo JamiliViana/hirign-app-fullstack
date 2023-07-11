@@ -10,8 +10,14 @@ O front-end do projeto foi desenvolvido utilizando o React com Vite. Siga as eta
 
 - Navegue até a pasta do front-end: cd frontend/.
 - Certifique-se de ter o Node.js e o npm instalados em sua máquina.
-- Instale as dependências do projeto: npm install.
-- Inicie o servidor de desenvolvimento: npm run dev.
+- Instale as dependências do projeto: 
+~~~~
+npm install.
+~~~~
+- Inicie o servidor de desenvolvimento:
+~~~~
+npm run dev.
+~~~~ 
 - Após a compilação bem-sucedida, o aplicativo estará disponível em <http://localhost:5173>
 
 ### Endpoints disponíveis:
