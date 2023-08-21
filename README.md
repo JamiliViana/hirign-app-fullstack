@@ -1,30 +1,47 @@
 # Projeto Full Stack
 Este é um projeto Full Stack que consiste em um aplicativo web desenvolvido com o framework Spring no back-end e React com Vite no front-end. Este projeto tem como funcionalidade gerenciar o processo de contratação de candidatos. A API oferece endpoints para iniciar o processo de contratação, agendar, desqualificar e aprovar candidatos, bem como obter o status de um candidato e listar os candidatos aprovados.
 
-## Configuração
+## Executando o Projeto
 ### Back-end
-O back-end do projeto foi desenvolvido utilizando o Spring Framework e está configurado para rodar na porta 8080 com o seguinte endpoint: <http://localhost:8080/api/v1/hiring.>
+- Certifique-se de ter o Java JDK e o Maven instalados.
+- Navegue para o diretório "back-end" no terminal.
+- Execute o seguinte comando para iniciar o servidor Spring Boot:
+~~~~bash
+mvn spring-boot:run
+~~~~
 
 ### Front-end
-O front-end do projeto foi desenvolvido utilizando o React com Vite. Siga as etapas abaixo para configurar e executar o front-end:
-
-- Navegue até a pasta do front-end: cd frontend/.
-- Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+- Certifique-se de ter o Node.js instalado.
+- Navegue para o diretório "front-end" no terminal.
 - Instale as dependências do projeto: 
-~~~~
+~~~~bash
 npm install.
 ~~~~
 - Inicie o servidor de desenvolvimento:
-~~~~
+~~~~bash
 npm run dev.
 ~~~~ 
 - Após a compilação bem-sucedida, o aplicativo estará disponível em <http://localhost:5173>
 
-### Endpoints disponíveis:
 
-- POST http://localhost:8080/api/v1/hiring/start inicia um candidato com o nome fornecido pelo usuário, ele retorna o id que foi gerado.
-- POST http://localhost:8080/api/v1/hiring/schedule muda o status para "Qualificado" do candidato referente o codCandidato fornecido pelo usuário.
-- POST http://localhost:8080/api/v1/hiring/disqualify desqualifica e exclui o candidato referente o codCandidato fornecido pelo usuário.
-- POST http://localhost:8080/api/v1/hiring/aprove muda o status para "Aprovado" do candidato referente o codCandidato fornecido pelo usuário.
-- GET http://localhost:8080/api/v1/hiring/status/candidate/{codCandidato} retorna o status do candidato com o código especificado.
-- GET http://localhost:8080/api/v1/hiring/approved retorna lista de candidatos aprovados.
+## Funcionalidades
+O front-end oferece uma interface de usuário intuitiva para interagir com a API:
+
+### Iniciar Processo
+- Ao clicar no botão "Iniciar Processo", você envia o nome do candidato.
+
+### Marcar Entrevista
+- Ao clicar no botão "Marcar Entrevista", você pode inserir o código do candidato.
+
+### Desqualificar Candidato
+- Ao clicar no botão "Desqualificar Candidato", você pode inserir o código do candidato.
+
+### Aprovar Candidato
+- Ao clicar no botão "Aprovar Candidato", você pode inserir o código do candidato.
+
+### Verificar Status
+- Ao clicar no botão "Verificar Candidato", você pode inserir o código do candidato.
+
+### Candidatos Aprovados
+- Ao clicar no botão "Aprovados", você verá a lista de candidatos aprovados.
+
